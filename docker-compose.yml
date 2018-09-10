@@ -3,11 +3,15 @@ version: "2"
 services:
   loraserver:
     image: loraserver/loraserver:2
+    ports:
+      - 8801
     volumes:
       - ./configuration/loraserver:/etc/loraserver
 
   loraserver2:
     image: loraserver/loraserver:2
+    ports:
+      - 8802
     volumes:
       - ./configuration/loraserver2:/etc/loraserver
 
