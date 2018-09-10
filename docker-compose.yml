@@ -6,6 +6,11 @@ services:
     volumes:
       - ./configuration/loraserver:/etc/loraserver
 
+  loraserver2:
+    image: loraserver/loraserver:2
+    volumes:
+      - ./configuration/loraserver2:/etc/loraserver
+
   appserver:
     image: loraserver/lora-app-server:2
     ports:
